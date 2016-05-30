@@ -1,6 +1,4 @@
 
-/*@import url(https://fonts.googleapis.com/css?family=Poller+One);*/
-
 .robot {
   position: relative;
   left: 200px;
@@ -31,11 +29,12 @@
     background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
   }
 }
-
-.brain {
+.laser {
   animation: blink .5s infinite;
   -webkit-animation: blink .5s infinite;
   -moz-animation: blink .5s infinite;
+}
+.brain {
   background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
   background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
   background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
@@ -68,6 +67,33 @@
   left: -190px;
   z-index: -1;
 }
+@keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+  @-webkit-keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+
+  @-moz-keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+
+img {
+  animation: dance 4s infinite;
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+
+}
+
 .right {
   font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
