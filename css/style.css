@@ -1,5 +1,8 @@
 
 .robot {
+  animation: dance 4s infinite;
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
   position: relative;
   left: 200px;
 }
@@ -54,7 +57,24 @@
   border-right: 75px solid transparent;
   border-radius: 20px 20px 100px 100px;
 }
+@keyframes handdance {
+  from {
+  transform: rotate(180deg);
+  }
+}
+  @-webkit-keyframes handdance {
+  from {
+transform: rotate(180deg);
+  }
+}
+
+  @-moz-keyframes handdance {
+  from {
+    transform: rotate(180deg);
+  }
+}
 .left {
+    animation: handdance 4s infinite;
   font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
   font-size: 250px;
@@ -89,7 +109,7 @@ img {
   -webkit-animation: dance 4s infinite;
   -moz-animation: dance 4s infinite;
   position: absolute;
-  top: 200px;
+  top: 540px;
   left: 400px;
 
 }
